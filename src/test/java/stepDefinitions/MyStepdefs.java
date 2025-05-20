@@ -93,6 +93,7 @@ public class MyStepdefs {
     public void iShouldSeeAConfirmationOrBeRedirected() {
         WebElement confirmation = driver.findElement(By.cssSelector("body > div > div.page-content-wrapper > div > h2"));
         String expected = "THANK YOU FOR CREATING AN ACCOUNT WITH BASKETBALL ENGLAND";
+
         String actual = confirmation.getText().trim();
 
         assertEquals(expected, actual);
@@ -142,10 +143,10 @@ public class MyStepdefs {
         assertEquals(expected, actual);
     }
 
-//    @After
-//    public void tearDown() {
-//        if (driver != null) {
-//            driver.quit();
-//        }
-//    }
+    @After
+    public void tearDown() {
+        if (driver != null) {
+            driver.quit();
+        }
+    }
 }
