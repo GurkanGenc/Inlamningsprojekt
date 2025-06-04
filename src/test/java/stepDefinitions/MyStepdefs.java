@@ -60,7 +60,7 @@ public class MyStepdefs {
 
     @When("I enter valid registration details")
     public void iEnterValidRegistrationDetails() {
-        fillTheForm("13/08/1975", "Gürkan", "Jansson Genc", "gurkangenc@hotmail.com", "pass123word!", "pass123word!");
+        fillTheForm("13/08/1975", "Gürkan", "Jansson Genc", "mail@mail.com", "pass123word!", "pass123word!");
     }
 
     @When("I accept the terms and conditions")
@@ -101,7 +101,7 @@ public class MyStepdefs {
 
     @When("I enter invalid registration details last name {string}")
     public void iEnterInvalidRegistrationDetailsLastName(String lastName) {
-        fillTheForm("13/08/1975", "Gürkan", lastName, "gurkangenc@hotmail.com", "pass123word!", "pass123word!");
+        fillTheForm("13/08/1975", "Gürkan", lastName, "mail@mail.com", "pass123word!", "pass123word!");
     }
 
     @Then("I should see a warning message shows {string}")
@@ -115,7 +115,7 @@ public class MyStepdefs {
 
     @When("I enter invalid registration details confirmation password")
     public void iEnterInvalidRegistrationDetailsConfirmationPassword() {
-        fillTheForm("13/08/1975", "Gürkan", "Jansson Genc", "gurkangenc@hotmail.com", "pass123word!", "pass123word");
+        fillTheForm("13/08/1975", "Gürkan", "Jansson Genc", "mail@mail.com", "pass123word!", "pass123word");
     }
 
     @Then("I should see a warning message for wrong confirmation password")
